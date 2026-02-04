@@ -14,4 +14,5 @@ val appModule = module {
     factory { AuthPhoneViewModel(get()) }
     factory { AuthConfirmViewModel(get()) }
     factory { MapMainViewModel(get()) }
+    factory { MapViewModel() }
 }
