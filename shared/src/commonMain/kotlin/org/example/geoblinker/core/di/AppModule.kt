@@ -16,4 +16,5 @@ val appModule = module {
     factory { MapMainViewModel(get()) }
     factory { MapViewModel() }
     factory { DeviceDetailsViewModel() }
+    factory { DeviceSignalsViewModel() }
 }
