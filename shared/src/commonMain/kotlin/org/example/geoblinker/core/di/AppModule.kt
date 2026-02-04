@@ -12,4 +12,5 @@ val appModule = module {
     // Регистрируем ViewModel для списка устройств
     factory { ListScreenViewModel() }
     factory { AuthPhoneViewModel(get()) }
+    factory { AuthConfirmViewModel(get()) }
 }
