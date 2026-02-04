@@ -32,3 +32,5 @@
 - Добавлена кнопка сканирования QR-кода
 ### 2026-02-05 - AddDeviceManualScreen COMPLETED
 - Реализован экран настройки устройства с выбором категорий (Car, Person, Pet)
+### 2026-02-05 - ADD MODULE COMPLETED
+- Завершен полный цикл добавления устройств (Search -> Manual -> Success)
