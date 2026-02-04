@@ -17,4 +17,5 @@ val appModule = module {
     factory { MapViewModel() }
     factory { DeviceDetailsViewModel() }
     factory { DeviceSignalsViewModel() }
+    factory { DeviceDetachViewModel() }
 }
