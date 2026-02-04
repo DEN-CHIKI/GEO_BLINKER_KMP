@@ -23,4 +23,5 @@ val appModule = module {
     factory { AppSettingsViewModel() }
     factory { AddDeviceSearchViewModel() }
     factory { AddDeviceManualViewModel() }
+    factory { AddDeviceSuccessViewModel() }
 }
