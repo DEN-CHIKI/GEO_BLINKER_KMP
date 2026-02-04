@@ -1,0 +1,33 @@
+name: GEO_BLINKER_CI_CD
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ] # Сработает при создании тега v1.0, v2.0 и т.д.
+
+jobs:
+  check_and_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+
+      - name: Run Detekt (Проверка качества кода)
+        run: echo "Запуск Detekt: Проверка на логику в UI..." # Здесь будет ./gradlew detekt когда добавим конфиг
+
+      - name: Build Android APK
+        run: echo "Сборка APK..." # Здесь будет ./gradlew assembleDebug
+
+      - name: Create Release (Авто-Релиз)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: "**/build/outputs/apk/debug/*.apk"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
