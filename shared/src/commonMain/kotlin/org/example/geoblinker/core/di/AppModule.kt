@@ -15,4 +15,5 @@ val appModule = module {
     factory { AuthConfirmViewModel(get()) }
     factory { MapMainViewModel(get()) }
     factory { MapViewModel() }
+    factory { DeviceDetailsViewModel() }
 }
