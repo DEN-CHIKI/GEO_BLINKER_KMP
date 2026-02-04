@@ -30,3 +30,5 @@
 ### 2026-02-05 - AddDeviceSearchScreen COMPLETED
 - Реализован поиск устройства по IMEI с валидацией ввода
 - Добавлена кнопка сканирования QR-кода
+### 2026-02-05 - AddDeviceManualScreen COMPLETED
+- Реализован экран настройки устройства с выбором категорий (Car, Person, Pet)
