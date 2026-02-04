@@ -20,4 +20,5 @@ val appModule = module {
     factory { DeviceDetachViewModel() }
     factory { ProfileMainViewModel() }
     factory { ProfileEditViewModel() }
+    factory { AppSettingsViewModel() }
 }
