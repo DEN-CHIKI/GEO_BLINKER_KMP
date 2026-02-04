@@ -25,4 +25,5 @@ val appModule = module {
     factory { AddDeviceManualViewModel() }
     factory { AddDeviceSuccessViewModel() }
     factory { GeofenceListViewModel() }
+    factory { GeofenceListViewModel() }
 }
