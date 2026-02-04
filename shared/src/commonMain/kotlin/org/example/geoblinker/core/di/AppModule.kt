@@ -21,4 +21,5 @@ val appModule = module {
     factory { ProfileMainViewModel() }
     factory { ProfileEditViewModel() }
     factory { AppSettingsViewModel() }
+    factory { AddDeviceSearchViewModel() }
 }
